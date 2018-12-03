@@ -1,0 +1,162 @@
+.trust-blue-gradient {background: -webkit-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* Chrome 10+, Saf5.1+ */ background: -moz-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* FF3.6+ */ background: linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* W3C */ }
+
+.App {
+  display: inline-flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  display: flex;
+    background: -webkit-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* Chrome 10+, Saf5.1+ */ background: -moz-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* FF3.6+ */ background: linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* W3C */
+}
+
+.cardImage {
+    height: 350px;
+}
+
+.body {
+  background: #222;
+}
+
+.main {
+  display: inline-flex;
+  margin: 30px;
+  overflow: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.move {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.player-card {
+  border: 5px double black;
+  display: inline-block;
+  /* width: 246px; */
+  text-align: center;
+  /* padding: 20px; */
+  margin-right: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  height: 250px;
+  border-radius: 25px;
+  box-shadow: 3px 4px 3px 3px #ccc;
+}
+
+.link {
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+}
+
+.name {
+  border-bottom: 3px black solid;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+img {
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  padding: 10px 0 10px 0;
+}
+
+.ldfcimg .img {
+    height: 165px;
+}
+
+.cards {
+  margin-top: 15px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.overall-card {
+  width: 270px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  -webkit-box-shadow: 1px 1px 2px 2px #ccc !important;
+  box-shadow: 1px 1px 2px 2px #ccc !important;
+  min-height: 460px;
+    border-radius: 20px !important;
+}
+
+.normal-button {
+  background: coral !important;
+  color: white !important;
+    margin-bottom: 5px !important;
+}
+
+.done-button svg {
+  fill: green !important;
+  height: 48px !important;
+  width: 48px !important;
+}
+
+#logo {
+   font-family: 'Open Sans', sans-serif;
+   color: #555;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 50px;
+   font-weight: 800;
+   letter-spacing: -3px;
+   line-height: 1;
+   text-shadow: #EDEDED 3px 2px 0;
+   position: relative;
+ }
+/*#logo:after {*/
+  /*content:"Super Star Moves";*/
+  /*position: absolute;*/
+  /*left: 8px;*/
+  /*top: 32px;*/
+/*}*/
+/*#logo:after {*/
+  /*!*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*!*/
+  /*background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);*/
+  /*background-size: 4px 4px;*/
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*z-index: -5;*/
+  /*display: block;*/
+  /*text-shadow: none;*/
+/*}*/
+
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+          -3px -3px 0 #222,
+          3px -3px 0 #222,
+          -3px 3px 0 #222,
+          3px 3px 0 #222,
+          4px 4px 0 #fff,
+          5px 5px 0 #fff,
+          6px 6px 0 #fff,
+          7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+  font-size: 85px;
+}
