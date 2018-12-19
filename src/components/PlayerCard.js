@@ -101,11 +101,8 @@ export default class PlayerCard extends Component<Props, State> {
                        fontSize: '30px',
                        color: 'coral'
                    }}
+                   avatar={this.props.image}
                />
-               <CardMedia
-               >
-                   <img src={this.props.image} alt=""  className="cardImage" onClick={this.onClick}/>
-               </CardMedia>
                <CardTitle title={this.props.move}/>
                {buttons}
 
