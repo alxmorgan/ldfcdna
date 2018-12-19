@@ -23,6 +23,10 @@
   display: flex;
 }
 
+.main-overall {
+  display: inline-flex;
+}
+
 .move {
   font-size: 24px;
   margin-bottom: 5px;
@@ -88,11 +92,10 @@ img {
 
 .cards {
   margin-top: 15px;
-    display: -ms-inline-flexbox;
     display: block;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    /*-ms-flex-wrap: wrap;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-evenly;*/
     /*width: 99vw;*/
 }
 
