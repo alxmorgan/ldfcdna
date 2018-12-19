@@ -5,7 +5,6 @@
   overflow: auto;
   flex-wrap: wrap;
   display: flex;
-    background: -webkit-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* Chrome 10+, Saf5.1+ */ background: -moz-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* FF3.6+ */ background: linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* W3C */
 }
 
 .cardImage {
@@ -70,20 +69,31 @@ img {
   width: 100%;
   font-weight: bold;
   padding: 10px 0 10px 0;
+  display: inherit;
+  margin: 0 auto;
+  background: -webkit-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* Chrome 10+, Saf5.1+ */ background: -moz-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* FF3.6+ */ background: linear-gradient(360deg, #38aecc 10%, #347fb9 360%); /* W3C */
+
 }
 
-.ldfcimg .img {
-    height: 165px;
+.ldfcimg img {
+    height: 96px !important;
+    margin-left: 20px !important;
+}
+
+.ldfcimg {
+  height: 132px !important;
+  margin-left: 20px !important;
+  margin-right: 40px !important;
 }
 
 .cards {
   margin-top: 15px;
     display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: block;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    /*width: 99vw;*/
 }
 
 .overall-card {
@@ -93,7 +103,6 @@ img {
   margin-left: 10px;
   -webkit-box-shadow: 1px 1px 2px 2px #ccc !important;
   box-shadow: 1px 1px 2px 2px #ccc !important;
-  min-height: 460px;
     border-radius: 20px !important;
 }
 
@@ -142,15 +151,15 @@ img {
   color: #fff;
   font-family: Arvo;
   font-weight: bold;
-  text-shadow:
-          -3px -3px 0 #222,
-          3px -3px 0 #222,
-          -3px 3px 0 #222,
-          3px 3px 0 #222,
-          4px 4px 0 #fff,
-          5px 5px 0 #fff,
-          6px 6px 0 #fff,
-          7px 7px 0 #fff;
+  /*text-shadow:*/
+          /*-3px -3px 0 #222,*/
+          /*3px -3px 0 #222,*/
+          /*-3px 3px 0 #222,*/
+          /*3px 3px 0 #222,*/
+          /*4px 4px 0 #fff,*/
+          /*5px 5px 0 #fff,*/
+          /*6px 6px 0 #fff,*/
+          /*7px 7px 0 #fff;*/
   line-height: 0.8em;
   letter-spacing: 0.1em;
   transform: scaleY(0.7);
@@ -159,4 +168,36 @@ img {
   margin:0;
   text-align: center;
   font-size: 85px;
+}
+
+.player, .parent, .coach {
+    width: 99vw;
+}
+
+.ldfcimg {
+  height: 143px !important;
+  width: 143px;
+  /* margin-left: 20px !important; */
+  /* margin-right: 40px !important; */
+  /* padding: 10px; */
+  background: white;
+  /* margin: 0 auto; */
+  border-radius: 93px;
+}
+
+
+.ldfcimg img {
+  height: 96px !important;
+  /* margin-left: 20px !important; */
+  display: block;
+  margin: 0 auto;
+  top: 15%;
+  position: relative;
+}
+
+.cardImage {
+  height: 48px;
+  width: 48px !important;
+  border-radius: 50px;
+  min-width: initial !important;
 }

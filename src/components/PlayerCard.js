@@ -7,6 +7,7 @@ import Snackbar from 'material-ui/Snackbar';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
 import Wink from '../images/tenor.gif';
+import { Route } from 'react-router-dom';
 
 
 type Props = {
@@ -68,12 +69,25 @@ export default class PlayerCard extends Component<Props, State> {
         window.location.href = this.props.link;
     };
 
+
+
+
+
+
     render() {
+
+        const ButtonPlayer = (name) => (
+            <Route render={({ history}) => (
+                <FlatButton className="normal-button" label="Click here to learn more about me"  onClick={() => { history.push('/' + name) }}/>
+            )} />
+        )
+
+
 
         let doIt = this.state.moveDone;
         let doitButton = <FlatButton className="normal-button" label="Click here to learn more about me" onClick={this.completeMove}/>;
         let buttons =   this.props.name ? <CardActions>
-                {doitButton}
+                {ButtonPlayer(this.props.name)}
         </CardActions> : null;
 
 
